@@ -1,0 +1,65 @@
+
+GIT & GITHUB
+============
+
+Status e ciclos de vida:
+
+- untracked: Não marcado. O arq foi adicionado no repositório mas ainda não foi visto pelo GIT
+
+- unmodified: Não modificado. Ele existe mas nuna foi modificado.
+
+- modified: Modificado
+
+- staged: Após modificado ele pode ser jogado para uma área (após o commit)
+
+Após for "comitado" os arqs passam para unmodified
+
+Comandos:
+---------
+git status
+
+git commit -m "texto para observações" (salva a versão - snapshot)
+
+git log  
+git log --decorate
+git log --author="reginaldo"
+git shortlog (mostra os autores, qtos commits fizeram e quais foram)
+git shortlog -sn (mostra a quantidade de commits de cada autor)
+git log --graph (mostra os versionamentos em grafico)
+git show [hasch] (mostra alguns detalhes do versionanemnto)
+
+git commit -am "observações" (comita de uma só vez todos os arqs.modificados)
+
+git diff (mostra o que foi adcionado/alterado no código, antes mesmo de ser comitado)
+Use sempre este comando antes de commitar p/fazer uma revisão o que vc fez
+
+git diff -name-only
+
+Desfazendo coisas:
+------------------
+git checkout [nomeDoArquivo] (para arqs em estado de edição. Retorna o arquivo para o estado antes das alterações)
+
+git reset HEAD [nomeDoArquivo]  (para arqs já comitados. Retorna o arquivo original)
+
+Tipos de RESET:
+--soft (não entendi a diferença)
+--mixed (não entendi a diferença)
+--hard (mata todos os commits posteriores)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
